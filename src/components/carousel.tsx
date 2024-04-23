@@ -33,19 +33,25 @@ const ImageCarousel: React.FC<Props> = ({ carouselItems }) => {
       }
     };
     return (
-      <div className="App">
+      <div>
         <div style={{ position: "relative" }}>
           <Carousel responsive={responsive}>
             {carouselItems.map((item) => (
-                <div style={{
-                    padding: 20,
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                }}>
-                    <ImageContainer imageUrl={item.imageUrl} width={900} height={600} />
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
+                <div>
+                  <div style={{
+                    margin: 0,
+                  }}>
+                    <ImageContainer imageUrl={item.imageUrl} width={500} height={400} />
+                    <div style={{
+                      // padding: 0,
+                      // display: 'flex',
+                      // justifyContent: 'center',
+                      // alignItems: 'center',
+                    }}>
+                      <p>{item.title}</p>
+                      <p>{item.description}</p>
+                    </div>
+                  </div>
                 </div>
             ))}
           </Carousel>

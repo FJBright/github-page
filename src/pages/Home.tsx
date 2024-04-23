@@ -8,6 +8,7 @@ import image4 from '../assets/images/image4.jpg';
 import JapanAquarium from '../assets/images/JapanAquarium.jpg';
 import JapanHimijiCastle from '../assets/images/JapanHimijiCastle.jpg';
 import ImageCarousel, { CarouselItem } from '../components/carousel';
+import ImageContainer from '../components/imageContainer';
 
 
 const carouselItems: CarouselItem[] = [
@@ -50,11 +51,24 @@ const Home = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-        <div></div>
         <div style={{
           padding: 30,
         }}>
-          <h1>My Projects</h1>
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            padding: 30,
+          }}>
+            <h1 style={{
+              color: 'white',
+              fontSize: 24,
+              fontWeight: 'bolder'
+            }}>
+              About Me
+            </h1>
+            <ImageContainer imageUrl={JapanHimijiCastle} width={600} height={600} />
+          </div>
           <ImageCarousel carouselItems={carouselItems}/>
         </div>
       </div>
