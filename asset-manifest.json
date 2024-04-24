@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/github-page/static/css/main.6da80d8d.css",
-    "main.js": "/github-page/static/js/main.f7ab5017.js",
+    "main.js": "/github-page/static/js/main.0ff4c55b.js",
     "static/js/453.620a91ee.chunk.js": "/github-page/static/js/453.620a91ee.chunk.js",
     "static/media/JapanHimijiCastle.jpg": "/github-page/static/media/JapanHimijiCastle.a527fe30b08681b1566c.jpg",
     "static/media/JapanAquarium.jpg": "/github-page/static/media/JapanAquarium.61cc88e820dd7fc6fe86.jpg",
@@ -14,11 +14,11 @@
     "static/media/logo.svg": "/github-page/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/github-page/index.html",
     "main.6da80d8d.css.map": "/github-page/static/css/main.6da80d8d.css.map",
-    "main.f7ab5017.js.map": "/github-page/static/js/main.f7ab5017.js.map",
+    "main.0ff4c55b.js.map": "/github-page/static/js/main.0ff4c55b.js.map",
     "453.620a91ee.chunk.js.map": "/github-page/static/js/453.620a91ee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6da80d8d.css",
-    "static/js/main.f7ab5017.js"
+    "static/js/main.0ff4c55b.js"
   ]
 }
