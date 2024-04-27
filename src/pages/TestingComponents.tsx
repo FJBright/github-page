@@ -1,14 +1,8 @@
 import Header from './Header';
 // TODO replace these assets with images hosted elsewhere
-import ReactResponsiveCarousel from '../components/reactResponsiveCarousel';
-import { personalPictures } from '../components/imageList';
 import ReactMultiCarousel from '../components/reactMultiCarousel';
-
-export interface blogThumbnailDetails {
-  title: string;
-  imageUrl: string;
-  // date: Date; // TODO organise projects by date
-}
+import { personalPictures } from '../components/imageList';
+import ReactResponsiveCarousel from '../components/reactResponsiveCarousel';
 
 const Home = () => {
   return (
@@ -22,9 +16,8 @@ const Home = () => {
         alignItems: 'center',
       }}>
         <div style={{
-          paddingTop: '15px'
         }}>
-          <ReactMultiCarousel carouselItems={personalPictures}/>
+          <ReactResponsiveCarousel carouselItems={personalPictures}/>
         </div>
       </div>
     </div>

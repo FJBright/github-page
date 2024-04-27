@@ -10,7 +10,7 @@ export interface blogThumbnailDetails {
   // date: Date; // TODO organise projects by date
 }
 
-const Home = () => {
+const AboutMe = () => {
   return (
     <div>
       <Header></Header>
@@ -31,4 +31,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AboutMe;
