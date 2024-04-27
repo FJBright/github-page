@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.css": "/github-page/static/css/main.6da80d8d.css",
-    "main.js": "/github-page/static/js/main.0ff4c55b.js",
+    "main.css": "/github-page/static/css/main.6fa98cd3.css",
+    "main.js": "/github-page/static/js/main.b883677f.js",
     "static/js/453.620a91ee.chunk.js": "/github-page/static/js/453.620a91ee.chunk.js",
+    "static/media/JapanTokyoTower.jpg": "/github-page/static/media/JapanTokyoTower.3107657944929efacbc9.jpg",
     "static/media/JapanHimijiCastle.jpg": "/github-page/static/media/JapanHimijiCastle.a527fe30b08681b1566c.jpg",
     "static/media/JapanAquarium.jpg": "/github-page/static/media/JapanAquarium.61cc88e820dd7fc6fe86.jpg",
+    "static/media/JapanOsaka.jpg": "/github-page/static/media/JapanOsaka.c8d5ec40653c07e0fbd3.jpg",
+    "static/media/NZWork.png": "/github-page/static/media/NZWork.8f7d28eec47cdf1476a8.png",
     "static/media/revicons.eot": "/github-page/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/github-page/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/image1.jpg": "/github-page/static/media/image1.6250020613e63be5029c.jpg",
@@ -13,12 +16,12 @@
     "static/media/revicons.woff": "/github-page/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/logo.svg": "/github-page/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/github-page/index.html",
-    "main.6da80d8d.css.map": "/github-page/static/css/main.6da80d8d.css.map",
-    "main.0ff4c55b.js.map": "/github-page/static/js/main.0ff4c55b.js.map",
+    "main.6fa98cd3.css.map": "/github-page/static/css/main.6fa98cd3.css.map",
+    "main.b883677f.js.map": "/github-page/static/js/main.b883677f.js.map",
     "453.620a91ee.chunk.js.map": "/github-page/static/js/453.620a91ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6da80d8d.css",
-    "static/js/main.0ff4c55b.js"
+    "static/css/main.6fa98cd3.css",
+    "static/js/main.b883677f.js"
   ]
 }
