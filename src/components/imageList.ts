@@ -13,27 +13,27 @@ export interface CarouselItem {
 export const personalPictures: CarouselItem[] = [
     {
       imageUrl: NZWork,
-      title: 'Seng302',
-      description: '4',
+      title: '',
+      description: '',
     },
     {
       imageUrl: JapanHimijiCastle,
-      title: 'RaspberryPi - In Progress',
-      description: '1',
+      title: '',
+      description: '',
     },
     {
       imageUrl: JapanTokyoTower,
-      title: 'Github Page',
-      description: '2',
+      title: '',
+      description: '',
     },
     {
       imageUrl: JapanAquarium,
-      title: 'JapaneseReps',
-      description: '3',
+      title: '',
+      description: '',
     },
     {
       imageUrl: JapanOsaka,
-      title: 'Seng302',
-      description: '4',
+      title: '',
+      description: '',
     },
   ];

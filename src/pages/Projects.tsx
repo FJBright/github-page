@@ -2,10 +2,6 @@ import React from 'react';
 import Header from './Header';
 import BlogThumbnailList from '../components/projectThumbnailList';
 // TODO replace these assets with images hosted elsewhere
-import image1 from '../assets/images/image1.jpg';
-import image2 from '../assets/images/image2.jpg';
-import image3 from '../assets/images/image3.jpg';
-import image4 from '../assets/images/image4.jpg';
 import JapanAquarium from '../assets/images/JapanAquarium.jpg';
 
 export interface blogThumbnailDetails {
@@ -22,15 +18,15 @@ const Projects = () => {
     },
     {
       title: 'Github Page',
-      imageUrl: image3,
+      imageUrl: JapanAquarium,
     },
     {
       title: 'JapaneseReps',
-      imageUrl: image2,
+      imageUrl: JapanAquarium,
     },
     {
       title: 'Seng302',
-      imageUrl: image1,
+      imageUrl: JapanAquarium,
     },
   ];
 

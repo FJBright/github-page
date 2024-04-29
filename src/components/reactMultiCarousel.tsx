@@ -13,13 +13,13 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ imageUrl, width, height
     width: `${width}px`,     // Set the width of the container
     height: `${height}px`,   // Set the height of the container
     overflow: 'hidden',      // Hide any overflow to prevent image stretching
-    borderRadius: '4px',     // Optional: Add border radius for rounded corners
   };
 
   const imageStyle: React.CSSProperties = {
-    width: '100%',           // Make the image fill the container width
-    height: '100%',          // Make the image fill the container height
-    objectFit: 'scale-down',      // Maintain aspect ratio and cover container
+    width: '100%',            // Make the image fill the container width
+    height: '100%',           // Make the image fill the container height
+    objectFit: 'scale-down',  // https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
+    borderRadius: '14px',
   };
 
   return (
@@ -69,11 +69,12 @@ const ReactMultiCarousel: React.FC<Props> = ({ carouselItems }) => {
             // rewind={true}
             responsive={responsive}
             autoPlay={true}
-            showDots={true}
+            showDots={false}
             partialVisible={false}
             focusOnSelect={true}
-            autoPlaySpeed={5000}
+            autoPlaySpeed={2500}
             pauseOnHover={true}
+            removeArrowOnDeviceType={['tablet', 'mobile']}
           >
             {carouselItems.map((item) => (
                 <div>

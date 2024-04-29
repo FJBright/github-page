@@ -15,8 +15,8 @@ const AboutMe = () => {
     <div>
       <Header></Header>
       <div className="app" style={{
+        height: '100%',
         backgroundColor: 'rgba(20, 26, 31, 0.8)',
-        borderRadius: '2px',
         boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
         justifyContent: 'center',
         alignItems: 'center',
@@ -24,7 +24,9 @@ const AboutMe = () => {
         <div style={{
           paddingTop: '15px'
         }}>
+          <h1>About Me</h1>
           <ReactMultiCarousel carouselItems={personalPictures}/>
+          <p style={{paddingBottom: '50px'}}>Hi, I'm Finn, a graduate from the University of Canterbury, NZ.</p>
         </div>
       </div>
     </div>
