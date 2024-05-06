@@ -32,16 +32,25 @@ const Home = () => {
         }}>
           <div>
             <Typewriter
-              text="Hey, welcome to my Github page "
-              delay={100}
-              startDelay={0}
-            />
-            <Typewriter
-              text="Hey, welcome to my Github page"
+              text="Hey, welcome to my Github page B)"
               delay={100}
               startDelay={10}
             />
             <ReactMultiCarousel carouselItems={personalPictures}/>
+            <Typewriter
+              text="(It's still a work in progress but I'll have a few interesting projects and blog posts here in the near future)"
+              delay={30}
+              startDelay={10}
+            />
+            <div
+              style={{ marginTop: '20px' }}
+            >
+              <span>Thanks for checking out my progress</span>
+              <br></br>
+              <br></br>
+              <br></br>
+              <span>My email: Finn.bright457@gmail.com</span>
+            </div>
           </div>
         </div>
       </div>
