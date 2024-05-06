@@ -21,7 +21,7 @@ const Header = () => {
     <AppBar position="static"
       style={{
         backgroundColor: '#000000d1',
-        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+        boxShadow: 'inset rgb(255 255 255 / 10%) 0px 2px 10px 4px',
       }}
     >
       <Toolbar>
