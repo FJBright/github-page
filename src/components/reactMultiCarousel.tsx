@@ -10,8 +10,8 @@ interface ImageContainerProps {
 
 const ImageContainer: React.FC<ImageContainerProps> = ({ imageUrl, width, height }) => {
   const containerStyle: React.CSSProperties = {
-    width: `${width}px`,     // Set the width of the container
-    height: `${height}px`,   // Set the height of the container
+    width: `${width}vh`,     // Set the width of the container
+    height: `${height}vh`,   // Set the height of the container
     overflow: 'hidden',      // Hide any overflow to prevent image stretching
   };
 
@@ -72,7 +72,7 @@ const ReactMultiCarousel: React.FC<Props> = ({ carouselItems }) => {
             showDots={false}
             partialVisible={false}
             focusOnSelect={true}
-            autoPlaySpeed={2500}
+            autoPlaySpeed={3000}
             pauseOnHover={true}
             removeArrowOnDeviceType={['tablet', 'mobile']}
           >
@@ -80,7 +80,7 @@ const ReactMultiCarousel: React.FC<Props> = ({ carouselItems }) => {
                 <div>
                   <div style={{
                   }}>
-                    <ImageContainer imageUrl={item.imageUrl} width={500} height={400} />
+                    <ImageContainer imageUrl={item.imageUrl} width={90} height={50} />
                     <div style={{
                       padding: 0,
                       display: 'flex',
