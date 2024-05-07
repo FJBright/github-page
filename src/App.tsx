@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" Component={ Home } />
+        <Route path="/github-page" Component={ Home } />
         <Route path="/github-page" Component={ Home } />
         <Route path="/about-me" Component={ AboutMe } />
         <Route path="/projects" Component={ Projects } />

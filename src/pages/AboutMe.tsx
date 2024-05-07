@@ -25,7 +25,7 @@ const AboutMe = () => {
           paddingTop: '15px'
         }}>
           <h1>About Me</h1>
-          <ReactMultiCarousel carouselItems={personalPictures}/>
+          <ReactMultiCarousel carouselItems={personalPictures} width={30} height={30}/>
           <p style={{paddingBottom: '50px'}}>Hi, I'm Finn, a graduate from the University of Canterbury, NZ.</p>
         </div>
       </div>

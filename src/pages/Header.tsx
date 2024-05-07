@@ -2,7 +2,7 @@
 
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import logo from '../assets/images/logo.svg';
+import logo from '../assets/images/logo.png';
 import { useNavigate } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 import HoverUnderlineText from '../components/hoverUnderlineText';
@@ -39,10 +39,11 @@ const Header = () => {
           <Typography
             style={{
               cursor: 'pointer',
+              paddingLeft: '20px',
             }}
             variant="h6"
             component="div"
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/github-page')}
           >
             Finn's Github Page
           </Typography>

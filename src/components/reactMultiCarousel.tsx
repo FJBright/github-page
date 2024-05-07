@@ -10,7 +10,7 @@ interface ImageContainerProps {
 
 const ImageContainer: React.FC<ImageContainerProps> = ({ imageUrl, width, height }) => {
   const containerStyle: React.CSSProperties = {
-    width: `${width}vh`,     // Set the width of the container
+    width: `${width}vw`,     // Set the width of the container
     height: `${height}vh`,   // Set the height of the container
     overflow: 'hidden',      // Hide any overflow to prevent image stretching
   };
@@ -18,8 +18,8 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ imageUrl, width, height
   const imageStyle: React.CSSProperties = {
     width: '100%',            // Make the image fill the container width
     height: '100%',           // Make the image fill the container height
-    objectFit: 'scale-down',  // https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
-    borderRadius: '14px',
+    objectFit: 'contain',  // https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
+    borderRadius: '4px',
   };
 
   return (
@@ -31,33 +31,35 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ imageUrl, width, height
 
 
 export interface CarouselItem {
-    imageUrl: string,
-    title: string,
-    description: string,
+  imageUrl: string,
+  title: string,
+  description: string,
 };
 
 interface Props {
-    carouselItems: CarouselItem[];
+  carouselItems: CarouselItem[];
+  width: number,
+  height: number,
 }
 
-const ReactMultiCarousel: React.FC<Props> = ({ carouselItems }) => {
+const ReactMultiCarousel: React.FC<Props> = ({ carouselItems, width, height }) => {
     const responsive = {
       superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 3000 },
-        items: 5
+        items: 5,
       },
       desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 3
+        items: 3,
       },
       tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 2
+        items: 2,
       },
       mobile: {
         breakpoint: { max: 464, min: 0 },
-        items: 1
+        items: 1,
       }
     };
     return (
@@ -80,7 +82,7 @@ const ReactMultiCarousel: React.FC<Props> = ({ carouselItems }) => {
                 <div>
                   <div style={{
                   }}>
-                    <ImageContainer imageUrl={item.imageUrl} width={90} height={50} />
+                    <ImageContainer imageUrl={item.imageUrl} width={width} height={height} />
                     <div style={{
                       padding: 0,
                       display: 'flex',

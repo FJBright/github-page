@@ -36,7 +36,8 @@ const Home = () => {
               delay={100}
               startDelay={10}
             />
-            <ReactMultiCarousel carouselItems={personalPictures}/>
+            <br></br>
+            <ReactMultiCarousel carouselItems={personalPictures} width={100} height={36}/>
             <Typewriter
               text="(It's still a work in progress but I'll have a few interesting projects and blog posts here in the near future)"
               delay={30}
