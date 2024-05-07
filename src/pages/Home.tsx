@@ -33,16 +33,12 @@ const Home = () => {
           <div>
             <Typewriter
               text="Hey, welcome to my Github page B)"
-              delay={100}
+              delay={30}
               startDelay={10}
             />
             <br></br>
             <ReactMultiCarousel carouselItems={personalPictures} width={100} height={36}/>
-            <Typewriter
-              text="(It's still a work in progress but I'll have a few interesting projects and blog posts here in the near future)"
-              delay={30}
-              startDelay={10}
-            />
+            <span>(It's still a work in progress but I'll have a few interesting projects and blog posts here in the near future) </span>
             <div
               style={{ marginTop: '20px' }}
             >

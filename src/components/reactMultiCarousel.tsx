@@ -74,7 +74,7 @@ const ReactMultiCarousel: React.FC<Props> = ({ carouselItems, width, height }) =
             showDots={false}
             partialVisible={false}
             focusOnSelect={true}
-            autoPlaySpeed={3000}
+            autoPlaySpeed={4000}
             pauseOnHover={true}
             removeArrowOnDeviceType={['tablet', 'mobile']}
           >
