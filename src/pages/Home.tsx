@@ -42,11 +42,7 @@ const Home = () => {
             <div
               style={{ marginTop: '20px' }}
             >
-              <span>Thanks for checking out my progress</span>
-              <br></br>
-              <br></br>
-              <br></br>
-              <span>My email: Finn.bright457@gmail.com</span>
+              <span>Thanks for checking out my progress.</span>
             </div>
           </div>
         </div>
