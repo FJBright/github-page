@@ -1,8 +1,8 @@
-import JapanTokyoTower from '../assets/images/JapanTokyoTower.jpg';
-import JapanOsaka from '../assets/images/JapanOsaka.jpg';
-import JapanAquarium from '../assets/images/JapanAquarium.jpg';
-import JapanHimijiCastle from '../assets/images/JapanHimijiCastle.jpg';
-import NZWork from '../assets/images/NZWork.png';
+import JapanTokyoTower from '../../assets/images/JapanTokyoTower.jpg';
+import JapanOsaka from '../../assets/images/JapanOsaka.jpg';
+import JapanAquarium from '../../assets/images/JapanAquarium.jpg';
+import JapanHimijiCastle from '../../assets/images/JapanHimijiCastle.jpg';
+import NZWork from '../../assets/images/NZWork.png';
 
 export interface CarouselItem {
     imageUrl: string,

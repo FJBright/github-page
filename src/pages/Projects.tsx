@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './Header';
 import BlogThumbnailList from '../components/projectThumbnailList';
 // TODO replace these assets with images hosted elsewhere
 import JapanAquarium from '../assets/images/JapanAquarium.jpg';
+import TableOfContents from '../components/tableOfContents2';
 
 export interface blogThumbnailDetails {
   title: string;
@@ -10,7 +11,7 @@ export interface blogThumbnailDetails {
   // date: Date; // TODO organise projects by date
 }
 
-const Projects = () => {
+const Projects = () => {  
   const items: blogThumbnailDetails[] = [
     {
       title: 'RaspberryPi - In Progress',
@@ -42,6 +43,7 @@ const Projects = () => {
         padding: 30,
       }}>
         <h1>My Projects</h1>
+        <TableOfContents />
         <BlogThumbnailList items={items} />
       </div>
     </div>
@@ -49,3 +51,7 @@ const Projects = () => {
 };
 
 export default Projects;
+
+function useEffect(arg0: () => void, arg1: never[]) {
+  throw new Error('Function not implemented.');
+}

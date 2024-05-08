@@ -1,6 +1,6 @@
 import Header from './Header';
 // TODO replace these assets with images hosted elsewhere
-import { personalPictures } from '../components/imageList';
+import { personalPictures } from '../components/imageContent/imageList';
 import ReactMultiCarousel from '../components/reactMultiCarousel';
 import Typewriter from '../components/typewriter';
 

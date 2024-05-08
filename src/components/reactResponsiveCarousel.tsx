@@ -1,6 +1,6 @@
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { CarouselItem } from './imageList';
+import { CarouselItem } from './imageContent/imageList';
 
 interface Props {
     carouselItems: CarouselItem[];

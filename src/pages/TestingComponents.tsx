@@ -1,7 +1,7 @@
 import Header from './Header';
 // TODO replace these assets with images hosted elsewhere
 import ReactMultiCarousel from '../components/reactMultiCarousel';
-import { personalPictures } from '../components/imageList';
+import { personalPictures } from '../components/imageContent/imageList';
 import ReactResponsiveCarousel from '../components/reactResponsiveCarousel';
 
 const Home = () => {

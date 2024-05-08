@@ -1,0 +1,31 @@
+# Project Seng302 - 
+
+This was my team's Seng302 project from 2021. In this we collaborated to build a frontend in JavaScript with the Vue.js framework (a library of GUI components).
+On the backend we developed in Java with the Spring Boot framework.
+npm and Gradle for the backend and frontend package managers respectively.
+We made use of Gitlab CI to automate unit and Cucumber tests.
+During the course we were encouraged to reflect on our work, how we worked as a team, and make future considerations.
+
+My contributions to the team where pagination, graphing of sales, 
+
+My gratitude goes my team members
+Swapnil Bhagat
+Christian Askey
+Harrison Caughey
+Finn Bright
+Seth Kingsbury
+Callum McLoughlin
+Inga Tokarenko
+Nathan Huynh
+
+My Lectures
+Moffat Matthews
+Fabian Gilson
+Neville Churcher
+
+Scrum Masters
+Matthew
+Cheng-Yi
+Euan
+Lydia
+Rebekah
