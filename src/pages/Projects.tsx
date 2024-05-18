@@ -1,10 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Header from './Header';
-import BlogThumbnailList from '../components/projectThumbnailList';
 // TODO replace these assets with images hosted elsewhere
 import JapanAquarium from '../assets/images/JapanAquarium.jpg';
 import toohakPlanningPageOne from '../assets/images/toohak-planning-page-1.png';
 import toohakPlanningPageTwo from '../assets/images/toohak-planning-page-2.png';
+import githubPageOne from '../assets/images/githubPage200424.png';
+import githubPageTwo from '../assets/images/githubPage240506.png';
+import githubPageThree from '../assets/images/githubPage270424.png';
+import githubPageFour from '../assets/images/githubPage060524.png';
 import '../styles/style.css'; // Import the CSS file here
 import ReactPlayer from 'react-player';
 
@@ -190,6 +193,12 @@ const Home: React.FC = () => {
         <TableOfContents />
         <main>
           <h1 id="title-header">My Projects</h1>
+          <h2 id="header-github-page">GitHub page - React with TypeScript</h2>
+          <img src={githubPageOne} />
+          <img src={githubPageTwo} />
+          <img src={githubPageThree} />
+          <img src={githubPageFour} />
+          <h4>2024</h4>
           <h2 id="header-Toohak">Toohak - Kotlin</h2>
           <h4>2022</h4>
             <ReactPlayer url='https://youtu.be/3eYTkhsNMEI' />
