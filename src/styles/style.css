@@ -51,5 +51,8 @@ li > a:hover {
 /*  Gives a little bit of buffer when header is navigated to */
 h2, h3 {
   padding-top: 16px;
-  margin-top: -16px;
+}
+
+h4 {
+  margin-top: -22px;
 }

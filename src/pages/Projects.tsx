@@ -237,26 +237,20 @@ const Home: React.FC = () => {
         <TableOfContents />
         <main>
           <h1 id="title-header">My Projects</h1>
-          <h2 id="header-1">2022 - JapaneseReps</h2>
+          <h2 id="header-Toohak">Toohak</h2>
+          <h4>2022</h4>
+            <ReactPlayer url='https://youtu.be/3eYTkhsNMEI' />
+            <p>
+              My Seng440 team's project. Together we developed a kotlin app that made use of 
+            </p>
+          <h2 id="header-JapaneseReps">JapaneseReps</h2>
+          <h4>2022</h4>
             <ReactPlayer url='https://youtu.be/-lx23Mga0Jk' />
             <p>During my last year of university I developed an app to help me with a Japanese language course I was also taking at the time.</p>
             <p>
               In that course I learnt about intents, recycler views, and gained an understanding of the kotlin language and app development in Android Studio. 
               The exam for this course stood out to me. This was because within a set timeframe we developed an app based on given requirements.
             </p>
-          <h2 id="header-2">Second header</h2>
-          <p>{DummyText}</p>
-          <h3 id="header-3">Third header</h3>
-          <p>{DummyText}</p>
-          <p>{DummyText}</p>
-          <h2 id="header-4">Fourth header</h2>
-          <p>{DummyText}</p>
-          <p>{DummyText}</p>
-          <p>{DummyText}</p>
-          <p>{DummyText}</p>
-          <h3 id="header-5">Fifth header</h3>
-          <p>{DummyText}</p>
-          <p>{DummyText}</p>
         </main>
       </div>
       </div>
