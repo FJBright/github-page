@@ -3,36 +3,31 @@ import JapanOsaka from '../../assets/images/JapanOsaka.jpg';
 import JapanAquarium from '../../assets/images/JapanAquarium.jpg';
 import JapanHimijiCastle from '../../assets/images/JapanHimijiCastle.jpg';
 import NZWork from '../../assets/images/NZWork.png';
-
-export interface CarouselItem {
-    imageUrl: string,
-    title: string,
-    description: string,
-};
+import { CarouselItem } from '../reactMultiCarousel';
 
 export const personalPictures: CarouselItem[] = [
     {
-      imageUrl: NZWork,
+      src: NZWork,
       title: '',
       description: '',
     },
     {
-      imageUrl: JapanHimijiCastle,
+      src: JapanHimijiCastle,
       title: '',
       description: '',
     },
     {
-      imageUrl: JapanTokyoTower,
+      src: JapanTokyoTower,
       title: '',
       description: '',
     },
     {
-      imageUrl: JapanAquarium,
+      src: JapanAquarium,
       title: '',
       description: '',
     },
     {
-      imageUrl: JapanOsaka,
+      src: JapanOsaka,
       title: '',
       description: '',
     },

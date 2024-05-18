@@ -1,6 +1,6 @@
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { CarouselItem } from './imageContent/imageList';
+import { CarouselItem } from './reactMultiCarousel';
 
 interface Props {
     carouselItems: CarouselItem[];
@@ -23,7 +23,7 @@ const ReactResponsiveCarousel: React.FC<Props> = ({ carouselItems }) => {
         {carouselItems.map((image) => (
           // <ImageContainer imageUrl={image.download_url} width={100} height={400} />
           <img
-            src={image.imageUrl}
+            src={image.src}
             alt={image.title}
             style={{
               overflow: 'hidden',      // Hide any overflow to prevent image stretching

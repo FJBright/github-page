@@ -2,22 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import Header from './Header';
 // TODO replace these assets with images hosted elsewhere
 import JapanAquarium from '../assets/images/JapanAquarium.jpg';
-import toohakPlanningPageOne from '../assets/images/toohak-planning-page-1.png';
-import toohakPlanningPageTwo from '../assets/images/toohak-planning-page-2.png';
 import githubPageOne from '../assets/images/githubPage200424.png';
-import githubPageTwo from '../assets/images/githubPage240506.png';
-import githubPageThree from '../assets/images/githubPage270424.png';
-import githubPageFour from '../assets/images/githubPage060524.png';
 import '../styles/style.css'; // Import the CSS file here
 import ReactPlayer from 'react-player';
+import { Link } from 'react-router-dom';
 
 // https://www.emgoto.com/react-table-of-contents/
-
-export interface blogThumbnailDetails {
-  title: string;
-  imageUrl: string;
-  // date: Date; // TODO organise projects by date
-}
 
 interface HeadingItem {
   id: string;
@@ -146,28 +136,20 @@ const TableOfContents: React.FC = () => {
   );
 };
 
-const DummyText =
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-
 const Home: React.FC = () => {
-  const items: blogThumbnailDetails[] = [
-    {
-      title: 'RaspberryPi - In Progress',
-      imageUrl: JapanAquarium,
-    },
-    {
-      title: 'Github Page',
-      imageUrl: JapanAquarium,
-    },
-    {
-      title: 'JapaneseReps',
-      imageUrl: JapanAquarium,
-    },
-    {
-      title: 'Seng302',
-      imageUrl: JapanAquarium,
-    },
-  ];
+
+  const containerStyle: React.CSSProperties = {
+    width: `50vw`,     // Set the width of the container
+    height: `50vh`,   // Set the height of the container
+    overflow: 'hidden',      // Hide any overflow to prevent image stretching
+  };
+
+  const imageStyle: React.CSSProperties = {
+    width: '100%',            // Make the image fill the container width
+    height: '100%',           // Make the image fill the container height
+    objectFit: 'contain',  // https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
+    borderRadius: '4px',
+  };
 
   return (
     <div 
@@ -178,7 +160,7 @@ const Home: React.FC = () => {
       }}
     >
       <Header></Header>
-      <div className="app" style={{
+      <div style={{
         backgroundColor: 'rgba(200, 200, 200, 1)',
         boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
       }}>
@@ -194,80 +176,23 @@ const Home: React.FC = () => {
         <main>
           <h1 id="title-header">My Projects</h1>
           <h2 id="header-github-page">GitHub page - React with TypeScript</h2>
-          <img src={githubPageOne} />
-          <img src={githubPageTwo} />
-          <img src={githubPageThree} />
-          <img src={githubPageFour} />
           <h4>2024</h4>
+          <div style={containerStyle}>
+            <img style={imageStyle} src={githubPageOne} />
+          </div>
+          <p>Being more of a backend developer, I've put into practice some of what I've learnt during academia and industry to make this page.</p>
+          <Link to="/projects/github-page">Read more</Link>
+            {/* <div
+              style={linkStyle}
+              onClick={() => navigate('/book-reviews')}
+            >
+              <HoverUnderlineText text='Books' uniqueKey={'link 1'} textStyle={linkStyle} />
+            </div> */}
           <h2 id="header-Toohak">Toohak - Kotlin</h2>
           <h4>2022</h4>
             <ReactPlayer url='https://youtu.be/3eYTkhsNMEI' />
             <h3 id="header-Toohak-planning">Planning</h3>
-            <p>
-              Independently we sketched some initial ideas for what we wanted to develop. These were based on the functional requirements, limited time, and need to balance other courses.
-            </p>
-            <img src={toohakPlanningPageOne} />
-            <img src={toohakPlanningPageTwo} />
-            <p>
-              Because of the limited time we opted for a multiplayer quiz game that made use of Android's nearby share. 
-            </p>
-            <ol>
-              <li>
-              Interact with the nearby physical world in some way. This interaction might rely on
-              sensors, GPS/location, the camera, or Bluetooth to create a local area network.
-              </li>
-              <li>
-              Interact with the nearby physical world in some additional way.
-              </li>
-              <li>
-              Handle one type of input based on a non-simple (i.e. non-click) Gesture in a non-standard way, e.g. fling, drag, multitouch, etc.
-              </li>
-              <li>
-              Provide a facility for “openness”—for a user to interoperate with entities beyond
-              their phone or beyond your app. This could take many forms. You could allow the
-              user to export a backup of your app's data that could be imported by someone else
-              or on another device. You could provide support for deep-linking, such that certain
-              patterns of URLs would trigger your app. You could allow the user to share
-              achievements via texting or social media. If your idea for this feature situates your
-              app within the larger community, it probably qualifies
-              </li>
-              <li>
-              Gracefully handle configuration changes, not losing any of the user's data.
-              </li>
-              <li>
-              Use a local database to persist data, preferably using Room.
-              </li>
-              <li>
-              Send the user notifications related to your app in some way.
-              </li>
-              <li>
-              Integrate an action bar in at least one activity.
-              </li>
-              <li>
-              Provide a preference screen using the modern AndroidX Preference Library
-              </li>
-              <li>
-              Add a multi-resolution launcher icon.
-              </li>
-              <li>
-              Support both landscape and portrait orientations in all views—unless your content
-              demands a fixed orientation, as in a game. In other words, all widgets should be able
-              to be made fully visible in either orientation.
-              </li>
-              <li>
-              Use string resources for all static text on the user interface.
-              </li>
-              <li>
-              Write a set of user stories for your app and include them in your post mortem
-              </li>
-              <li>
-              Find two people who are not part of your group, have them test your app, and record
-              their feedback in your post mortem
-              </li>
-              <li>
-              Successful demo of your app during the last week of class.
-              </li>
-            </ol>
+            <Link to="/projects/toohak">Read more</Link>
           <h2 id="header-JapaneseReps">JapaneseReps - Kotlin</h2>
           <h4>2022</h4>
             <ReactPlayer url='https://youtu.be/-lx23Mga0Jk' />

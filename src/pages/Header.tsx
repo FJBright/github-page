@@ -62,12 +62,12 @@ const Header = () => {
             >
               <HoverUnderlineText text='Projects' uniqueKey={'link 1'} textStyle={linkStyle} />
             </div>
-            <div
+            {/* <div
               style={linkStyle}
               onClick={() => navigate('/book-reviews')}
             >
               <HoverUnderlineText text='Books' uniqueKey={'link 1'} textStyle={linkStyle} />
-            </div>
+            </div> */}
             <div
                 style={linkStyle}
                 onClick={() => navigate('/about-me')}

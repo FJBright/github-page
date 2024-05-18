@@ -23,12 +23,13 @@ const Home = () => {
         boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '90vh',
+        height: '100%',
       }}>
         <div style={{
           paddingTop: '10vh',
           paddingLeft: '20vh',
           paddingRight: '20vh',
+          paddingBottom: '40px',
           height: '80vh',
           marginLeft: '10vw',
           marginRight: '10vw',
@@ -38,17 +39,16 @@ const Home = () => {
           <div>
             <br></br>
             <ReactMultiCarousel carouselItems={personalPictures} width={100} height={36}/>
-            <span>Hey I'm Finn, a Kiwi/Australian/Singaporean</span>
+            <span>Hey I'm Finn, a UC graduate of 2023. I'm {age} years young.</span>
             <br></br>
-            <br></br>
-            <span>I graduated in 2023, and I'm {age} years young.</span>
-            <br></br>
-            <span>During university I worked in small & large Agile teams to create projects.</span>
+            <span>During university and industry I've worked in small and large Agile teams to develop projects.</span>
             <span>In my career so far I've worked on Docker networks with Redis caches,</span>
             <span>and a meriad of other tech stacks.</span>
             <br></br>
             <br></br>
-            <span>For more questions, you can contact Finn.bright457@gmail.com</span>
+            <span>For more questions, you can contact me at Finn.bright457@gmail.com</span>
+            <br></br>
+            <a href="https://www.linkedin.com/in/finn-bright-a9165a220/">LinkedIn</a>
           </div>
         </div>
       </div>
