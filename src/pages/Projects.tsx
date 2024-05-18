@@ -5,19 +5,11 @@ import JapanAquarium from '../assets/images/JapanAquarium.jpg';
 import toohakPlanningPageOne from '../assets/images/toohak-planning-page-1.png';
 import toohakPlanningPageTwo from '../assets/images/toohak-planning-page-2.png';
 import githubPageOne from '../assets/images/githubPage200424.png';
-import githubPageTwo from '../assets/images/githubPage240506.png';
-import githubPageThree from '../assets/images/githubPage270424.png';
-import githubPageFour from '../assets/images/githubPage060524.png';
 import '../styles/style.css'; // Import the CSS file here
 import ReactPlayer from 'react-player';
+import { Link } from 'react-router-dom';
 
 // https://www.emgoto.com/react-table-of-contents/
-
-export interface blogThumbnailDetails {
-  title: string;
-  imageUrl: string;
-  // date: Date; // TODO organise projects by date
-}
 
 interface HeadingItem {
   id: string;
@@ -146,28 +138,20 @@ const TableOfContents: React.FC = () => {
   );
 };
 
-const DummyText =
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-
 const Home: React.FC = () => {
-  const items: blogThumbnailDetails[] = [
-    {
-      title: 'RaspberryPi - In Progress',
-      imageUrl: JapanAquarium,
-    },
-    {
-      title: 'Github Page',
-      imageUrl: JapanAquarium,
-    },
-    {
-      title: 'JapaneseReps',
-      imageUrl: JapanAquarium,
-    },
-    {
-      title: 'Seng302',
-      imageUrl: JapanAquarium,
-    },
-  ];
+
+  const containerStyle: React.CSSProperties = {
+    width: `50vw`,     // Set the width of the container
+    height: `50vh`,   // Set the height of the container
+    overflow: 'hidden',      // Hide any overflow to prevent image stretching
+  };
+
+  const imageStyle: React.CSSProperties = {
+    width: '100%',            // Make the image fill the container width
+    height: '100%',           // Make the image fill the container height
+    objectFit: 'contain',  // https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
+    borderRadius: '4px',
+  };
 
   return (
     <div 
@@ -194,11 +178,15 @@ const Home: React.FC = () => {
         <main>
           <h1 id="title-header">My Projects</h1>
           <h2 id="header-github-page">GitHub page - React with TypeScript</h2>
-          <img src={githubPageOne} />
-          <img src={githubPageTwo} />
-          <img src={githubPageThree} />
-          <img src={githubPageFour} />
           <h4>2024</h4>
+          <div style={containerStyle}>
+            <img style={imageStyle} src={githubPageOne} />
+          </div>
+          <p>Being more of a backend developer, I've put into practice some of what I've learnt during academia and industry to make this page.</p>
+          <Link to="/projects/github-page">Read more</Link>
+          {/* <img style={imageStyle} src={githubPageTwo} />
+          <img src={githubPageThree} />
+          <img src={githubPageFour} /> */}
           <h2 id="header-Toohak">Toohak - Kotlin</h2>
           <h4>2022</h4>
             <ReactPlayer url='https://youtu.be/3eYTkhsNMEI' />

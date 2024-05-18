@@ -1,8 +1,7 @@
 import Header from './Header';
 // TODO replace these assets with images hosted elsewhere
-import { personalPictures } from '../components/imageContent/imageList';
-import ReactMultiCarousel from '../components/reactMultiCarousel';
 import Typewriter from '../components/typewriter';
+import NZWork from '../assets/images/NZWork.png';
 
 export interface blogThumbnailDetails {
   title: string;
@@ -37,7 +36,7 @@ const Home = () => {
               startDelay={10}
             />
             <br></br>
-            <ReactMultiCarousel carouselItems={personalPictures} width={100} height={36}/>
+            <ImageContainer imageUrl={ NZWork } width={ 50 } height={ 50 } />
             <span> </span>
             <div
               style={{ marginTop: '20px' }}

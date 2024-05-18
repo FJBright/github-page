@@ -8,10 +8,10 @@ interface ImageContainerProps {
   height: number;
 }
 
-const ImageContainer: React.FC<ImageContainerProps> = ({ imageUrl, width, height }) => {
+export const ImageContainer: React.FC<ImageContainerProps> = ({ imageUrl, width, height }) => {
   const containerStyle: React.CSSProperties = {
-    width: `${width}vw`,     // Set the width of the container
-    height: `${height}vh`,   // Set the height of the container
+    width: `${width}%`,     // Set the width of the container
+    height: `${height}%`,   // Set the height of the container
     overflow: 'hidden',      // Hide any overflow to prevent image stretching
   };
 
@@ -81,6 +81,7 @@ const ReactMultiCarousel: React.FC<Props> = ({ carouselItems, width, height }) =
             {carouselItems.map((item) => (
                 <div>
                   <div style={{
+                    paddingLeft: '20px',
                   }}>
                     <ImageContainer imageUrl={item.imageUrl} width={width} height={height} />
                     <div style={{
