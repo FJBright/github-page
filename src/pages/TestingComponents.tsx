@@ -4,7 +4,7 @@ import ReactMultiCarousel from '../components/reactMultiCarousel';
 import { personalPictures } from '../components/imageContent/imageList';
 import ReactResponsiveCarousel from '../components/reactResponsiveCarousel';
 
-const Home = () => {
+const ComponentTesting = () => {
   return (
     <div>
       <Header></Header>
@@ -24,4 +24,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ComponentTesting;

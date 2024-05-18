@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <AppBar position="sticky"
       style={{
-        backgroundColor: 'rgb(64, 64, 64)',
+        backgroundColor: 'rgb(40, 40, 40)',
         boxShadow: 'inset rgb(255 255 255 / 10%) 0px 2px 10px 4px',
       }}
     >
@@ -61,6 +61,12 @@ const Header = () => {
               onClick={() => navigate('/projects')}
             >
               <HoverUnderlineText text='Projects' uniqueKey={'link 1'} textStyle={linkStyle} />
+            </div>
+            <div
+              style={linkStyle}
+              onClick={() => navigate('/book-reviews')}
+            >
+              <HoverUnderlineText text='Books' uniqueKey={'link 1'} textStyle={linkStyle} />
             </div>
             <div
                 style={linkStyle}

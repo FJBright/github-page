@@ -3,6 +3,8 @@ import Header from './Header';
 import BlogThumbnailList from '../components/projectThumbnailList';
 // TODO replace these assets with images hosted elsewhere
 import JapanAquarium from '../assets/images/JapanAquarium.jpg';
+import toohakPlanningPageOne from '../assets/images/toohak-planning-page-1.png';
+import toohakPlanningPageTwo from '../assets/images/toohak-planning-page-2.png';
 import '../styles/style.css'; // Import the CSS file here
 import ReactPlayer from 'react-player';
 
@@ -13,55 +15,6 @@ export interface blogThumbnailDetails {
   imageUrl: string;
   // date: Date; // TODO organise projects by date
 }
-
-// export interface blogThumbnailDetails {
-//   title: string;
-//   imageUrl: string;
-//   // date: Date; // TODO organise projects by date
-// }
-
-// const Projects = () => {  
-//   const items: blogThumbnailDetails[] = [
-//     {
-//       title: 'RaspberryPi - In Progress',
-//       imageUrl: JapanAquarium,
-//     },
-//     {
-//       title: 'Github Page',
-//       imageUrl: JapanAquarium,
-//     },
-//     {
-//       title: 'JapaneseReps',
-//       imageUrl: JapanAquarium,
-//     },
-//     {
-//       title: 'Seng302',
-//       imageUrl: JapanAquarium,
-//     },
-//   ];
-
-//   return (
-//     <div className="app" style={{
-//       backgroundColor: 'rgba(20, 26, 31, 0.8)',
-//       borderRadius: '2px',
-//       boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-//     }}>
-//       <Header></Header>
-//       <div></div>
-//       <div style={{
-//         padding: 30,
-//       }}>
-//         <h1>My Projects</h1>
-//         {/* <TableOfContents /> */}
-//         {/* <BlogThumbnailList items={items} /> */}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Projects;
-
-
 
 interface HeadingItem {
   id: string;
@@ -237,19 +190,81 @@ const Home: React.FC = () => {
         <TableOfContents />
         <main>
           <h1 id="title-header">My Projects</h1>
-          <h2 id="header-Toohak">Toohak</h2>
+          <h2 id="header-Toohak">Toohak - Kotlin</h2>
           <h4>2022</h4>
             <ReactPlayer url='https://youtu.be/3eYTkhsNMEI' />
+            <h3 id="header-Toohak-planning">Planning</h3>
             <p>
-              My Seng440 team's project. Together we developed a kotlin app that made use of 
+              Independently we sketched some initial ideas for what we wanted to develop. These were based on the functional requirements, limited time, and need to balance other courses.
             </p>
-          <h2 id="header-JapaneseReps">JapaneseReps</h2>
+            <img src={toohakPlanningPageOne} />
+            <img src={toohakPlanningPageTwo} />
+            <p>
+              Because of the limited time we opted for a multiplayer quiz game that made use of Android's nearby share. 
+            </p>
+            <ol>
+              <li>
+              Interact with the nearby physical world in some way. This interaction might rely on
+              sensors, GPS/location, the camera, or Bluetooth to create a local area network.
+              </li>
+              <li>
+              Interact with the nearby physical world in some additional way.
+              </li>
+              <li>
+              Handle one type of input based on a non-simple (i.e. non-click) Gesture in a non-standard way, e.g. fling, drag, multitouch, etc.
+              </li>
+              <li>
+              Provide a facility for “openness”—for a user to interoperate with entities beyond
+              their phone or beyond your app. This could take many forms. You could allow the
+              user to export a backup of your app's data that could be imported by someone else
+              or on another device. You could provide support for deep-linking, such that certain
+              patterns of URLs would trigger your app. You could allow the user to share
+              achievements via texting or social media. If your idea for this feature situates your
+              app within the larger community, it probably qualifies
+              </li>
+              <li>
+              Gracefully handle configuration changes, not losing any of the user's data.
+              </li>
+              <li>
+              Use a local database to persist data, preferably using Room.
+              </li>
+              <li>
+              Send the user notifications related to your app in some way.
+              </li>
+              <li>
+              Integrate an action bar in at least one activity.
+              </li>
+              <li>
+              Provide a preference screen using the modern AndroidX Preference Library
+              </li>
+              <li>
+              Add a multi-resolution launcher icon.
+              </li>
+              <li>
+              Support both landscape and portrait orientations in all views—unless your content
+              demands a fixed orientation, as in a game. In other words, all widgets should be able
+              to be made fully visible in either orientation.
+              </li>
+              <li>
+              Use string resources for all static text on the user interface.
+              </li>
+              <li>
+              Write a set of user stories for your app and include them in your post mortem
+              </li>
+              <li>
+              Find two people who are not part of your group, have them test your app, and record
+              their feedback in your post mortem
+              </li>
+              <li>
+              Successful demo of your app during the last week of class.
+              </li>
+            </ol>
+          <h2 id="header-JapaneseReps">JapaneseReps - Kotlin</h2>
           <h4>2022</h4>
             <ReactPlayer url='https://youtu.be/-lx23Mga0Jk' />
             <p>During my last year of university I developed an app to help me with a Japanese language course I was also taking at the time.</p>
             <p>
-              In that course I learnt about intents, recycler views, and gained an understanding of the kotlin language and app development in Android Studio. 
-              The exam for this course stood out to me. This was because within a set timeframe we developed an app based on given requirements.
+              In that project I learnt about intents, recycler views, and gained an understanding of Kotlin and XML languages as well as app development in Android Studio. 
             </p>
         </main>
       </div>
