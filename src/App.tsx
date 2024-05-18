@@ -10,7 +10,6 @@ function App() {
     <Router>
       <Routes>
         <Route path="/github-page" Component={ Home } />
-        <Route path="/github-page" Component={ Home } />
         <Route path="/about-me" Component={ AboutMe } />
         <Route path="/projects" Component={ Projects } />
         <Route path="/testing" Component={ TestingComponents } />

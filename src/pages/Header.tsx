@@ -18,9 +18,9 @@ const Header = () => {
   };
   
   return (
-    <AppBar position="static"
+    <AppBar position="sticky"
       style={{
-        backgroundColor: '#000000d1',
+        backgroundColor: 'rgb(64, 64, 64)',
         boxShadow: 'inset rgb(255 255 255 / 10%) 0px 2px 10px 4px',
       }}
     >

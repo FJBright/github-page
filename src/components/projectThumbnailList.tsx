@@ -1,17 +1,17 @@
 import React from 'react';
 import ProjectThumbnail from './projectThumbnail';
-import { blogThumbnailDetails } from '../pages/Home';
+// import { blogThumbnailDetails } from '../pages/Home';
 
 interface Props {
-  items: blogThumbnailDetails[];
+  // items: blogThumbnailDetails[];
 }
 
-const projectThumbnailList: React.FC<Props> = ({ items }) => {
+const projectThumbnailList: React.FC<Props> = ({ }) => {
   return (
     <div className="item-list">
-      {items.map((item, index) => (
+      {/* {items.map((item, index) => (
         <ProjectThumbnail key={index} title={item.title} imageUrl={item.imageUrl} />
-      ))}
+      ))} */}
     </div>
   );
 };
