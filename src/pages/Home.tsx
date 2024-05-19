@@ -37,7 +37,7 @@ const Home = () => {
               startDelay={10}
             />
             <br></br>
-            <ImageContainer imageUrl={ NZWork } width={ 30 } height={ 310 } />
+            <ImageContainer imageUrl={ NZWork } width={ 40 } height={ 40 } />
             <span> </span>
             <div
               style={{ marginTop: '20px' }}

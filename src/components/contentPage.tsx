@@ -27,7 +27,7 @@ const ContentPage: React.FC<ContentProps> = ({ title, date, imageDetails, text }
         boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '200%',
+        height: '100%',
       }}>
         <div style={{
           paddingTop: '10vh',
