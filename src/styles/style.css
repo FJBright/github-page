@@ -24,7 +24,7 @@ nav {
   align-self: flex-start;
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 48px;
+  top: 72px;
   max-height: calc(100vh - 70px);
   overflow: auto;
 }

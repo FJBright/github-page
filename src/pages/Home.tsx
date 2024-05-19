@@ -37,13 +37,15 @@ const Home = () => {
               startDelay={10}
             />
             <br></br>
-            <ImageContainer imageUrl={ NZWork } width={ 40 } height={ 40 } />
-            <span> </span>
-            <div
-              style={{ marginTop: '20px' }}
-            >
-              <span>Thanks for checking out my progress.</span>
-            </div>
+            <img
+              style={{
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                display: 'block',
+                width: '600px'
+              }}
+              src={ NZWork }
+            />
           </div>
         </div>
       </div>

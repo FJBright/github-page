@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Header from './Header';
 // TODO replace these assets with images hosted elsewhere
-import JapanAquarium from '../assets/images/JapanAquarium.jpg';
 import githubPageOne from '../assets/images/githubPage200424.png';
 import '../styles/style.css'; // Import the CSS file here
 import ReactPlayer from 'react-player';
@@ -190,12 +189,24 @@ const Home: React.FC = () => {
             </div> */}
           <h2 id="header-Toohak">Toohak - Kotlin</h2>
           <h4>2022</h4>
-            <ReactPlayer url='https://youtu.be/3eYTkhsNMEI' />
+            <ReactPlayer
+              style={{
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                display: 'block',
+              }}
+              url='https://youtu.be/3eYTkhsNMEI'
+            />
             <h3 id="header-Toohak-planning">Planning</h3>
             <Link to="/projects/toohak">Read more</Link>
           <h2 id="header-JapaneseReps">JapaneseReps - Kotlin</h2>
           <h4>2022</h4>
-            <ReactPlayer url='https://youtu.be/-lx23Mga0Jk' />
+            <ReactPlayer
+              style={{
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                display: 'block',
+              }} url='https://youtu.be/-lx23Mga0Jk' />
             <p>During my last year of university I developed an app to help me with a Japanese language course I was also taking at the time.</p>
             <p>
               In that project I learnt about intents, recycler views, and gained an understanding of Kotlin and XML languages as well as app development in Android Studio. 
