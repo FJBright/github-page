@@ -36,8 +36,8 @@ nav {
 }
 
 a {
-  color: #A6ACC9;
-  text-decoration: none;
+  color: #0087ff;
+  text-decoration: "underline";
 }
 
 li.active > a {

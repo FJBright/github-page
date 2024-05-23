@@ -41,9 +41,15 @@ const Home = () => {
             <ReactMultiCarousel carouselItems={personalPictures} width={100} height={36}/>
             <span>Hey I'm Finn, a UC graduate of 2023. I'm {age} years young.</span>
             <br></br>
-            <span>During university and industry I've worked in small and large Agile teams to develop projects.</span>
+            <span>
+              Hi, I'm Finn. A motivated Software Engineering with 2 years of experience. 
+              I have a passion for creating high-quality code and contributing 
+              to impactful applications. From gathering requirements from users 
+              and defining them into specific measurable steps, I have a proven 
+              track record of planning and accomplishing results.
+            </span>
             <span>In my career so far I've worked on Docker networks with Redis caches,</span>
-            <span>and a meriad of other tech stacks.</span>
+            <span>AWS, Devops, React, React Native, NoSQL, and SQL.</span>
             <br></br>
             <br></br>
             <span>For more questions, you can contact me at Finn.bright457@gmail.com</span>
