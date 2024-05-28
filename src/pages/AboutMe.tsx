@@ -39,10 +39,10 @@ const Home = () => {
           <div>
             <br></br>
             <ReactMultiCarousel carouselItems={personalPictures} width={100} height={36}/>
-            <span>Hey I'm Finn, a UC graduate of 2023. I'm {age} years young.</span>
+            <span>Hey I'm Finn, a UC graduate of 2023.</span>
             <br></br>
             <span>
-              Hi, I'm Finn. A motivated Software Engineering with 2 years of experience. 
+              A motivated Software Engineering with over 1 year of experience. 
               I have a passion for creating high-quality code and contributing 
               to impactful applications. From gathering requirements from users 
               and defining them into specific measurable steps, I have a proven 

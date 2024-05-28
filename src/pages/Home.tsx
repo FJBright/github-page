@@ -42,7 +42,8 @@ const Home = () => {
                 marginLeft: 'auto',
                 marginRight: 'auto',
                 display: 'block',
-                width: '600px'
+                objectFit: 'contain',
+                width: '30vw'
               }}
               src={ NZWork }
             />
