@@ -49,7 +49,7 @@ const Home = () => {
               track record of planning and accomplishing results.
             </span>
             <span>In my career so far I've worked on Docker networks with Redis caches,</span>
-            <span>AWS, Devops, React, React Native, NoSQL, and SQL.</span>
+            <span> AWS, Devops, React, React Native, NoSQL, and SQL.</span>
             <br></br>
             <br></br>
             <span>For more questions, you can contact me at Finn.bright457@gmail.com</span>
